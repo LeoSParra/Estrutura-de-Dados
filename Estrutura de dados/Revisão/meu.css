@@ -1,0 +1,14 @@
+body {
+    background-color: aqua;
+}
+div {
+    margin-bottom: 20px;
+}
+section {
+    border-radius: 10px; /* bordas arredondadas */
+    background-color: antiquewhite;
+    padding: 15px; /* espaçamento interno */
+    width: 600px; /* largura */
+    margin: auto; /* centraliza */ 
+    margin-top: 100px; /* espaçamento externo superior */
+}
