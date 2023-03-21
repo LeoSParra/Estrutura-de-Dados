@@ -66,4 +66,4 @@ function somarIndice(vetor){
         soma += vetor[i]
     }
     console.log(`${soma}`)
-}
+}                                                    
