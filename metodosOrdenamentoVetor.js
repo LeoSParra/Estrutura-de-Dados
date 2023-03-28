@@ -69,11 +69,3 @@ console.time('insercaoDireta1...')
 insercaoDireta1(vetor)
 console.timeEnd('insercaoDireta1...')
 console.log(vetor)
-
-
-
-
-
-
-
-

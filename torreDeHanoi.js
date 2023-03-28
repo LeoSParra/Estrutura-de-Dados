@@ -8,4 +8,4 @@ function torreHanoi(quantidade, origem, destino, auxiliar) {
     }
 }
 
-torreHanoi(3, 'A', 'B', 'C')
+torreHanoi(100, 'A', 'B', 'C')

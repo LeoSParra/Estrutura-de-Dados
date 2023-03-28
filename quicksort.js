@@ -7,11 +7,12 @@ function quicksort(array, left, right) {
 
     // partição
     while (i <= j) {
-        while (+array[i] < pivot) 
+        while (+array[i] < pivot) {
             i++
-        while (+array[j] > pivot) 
+        }
+        while (+array[j] > pivot) {
             j--
-            
+        }           
         if (i <= j) {
             auxiliar = array[i]
             array[i] = array[j]
@@ -21,10 +22,12 @@ function quicksort(array, left, right) {
         }
     }
     // recursão
-    if (left < j) 
+    if (left < j) {
         quicksort(array, left, j)
-    if (i < right) 
+    }
+    if (i < right) {
         quicksort(array, i, right)
+    }
     return array
 }
 
