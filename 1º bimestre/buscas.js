@@ -52,7 +52,7 @@ function buscaBinariaRecursiva(vetor, valorBusca, inicio, fim) {
     }
 }
 
-
 let vetor = [1,2,3,4,5,6,7,8,9,10,11,12]
 let resultado = buscaBinariaRecursiva(vetor, 5, 0, vetor.length-1)
 console.log(resultado)
+
