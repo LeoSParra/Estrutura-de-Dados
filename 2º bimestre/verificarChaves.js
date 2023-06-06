@@ -1,19 +1,23 @@
-function verificarParentesesChavesColchetes(vetor) {
-    let verificar = []
+function verifica(array) {
+    let verify = []
 
     for (let i = 0; i < vetor.length; i++) {
-        if (vetor[i] == '{' || vetor[i] == '[' || vetor[i] == '('){
-            verificar.push(vetor[i])
+        if (array[i] == '{' || array[i] == '[' || array[i] == '(') {
+            verify.push(array[i])
         }
-        else if (vetor[i] == '}' || vetor[i] == ']' || vetor[i] == ')') {
-            let top = verificar.pop()
-
-            if ((vetor[i] === ')' && top !== '(') || (vetor[i] === ']' && top !== '[') || (vetor[i] === '}' && top !== '{')) {
-                return "Acerta isso bicho burro"
+        else if (array[i] == '}' || array[i] == ']' || array[i] == ')') {
+            let topo = verify.pop()
+            if ((array[i] == ')' && topo !== '(') || (array[i] == ']' && topo !== '[') || (array[i] == '}' && topo !== '{')) {
+                return 'erro'
             }
         }
     }
-    return "Acertou bichao"
+    return 'Correto'
+
+
 }
-  let vetor = ['{', '[', '(', ')', ']', '}']
-console.log(verificarParentesesChavesColchetes(vetor))
+let vetor = ['{', '[', '(', ')', ']', '}']
+console.log(verifica(vetor))
+
+//Adriano Rodrigues Gomes da Silva
+//Leonardo Santos Parra
